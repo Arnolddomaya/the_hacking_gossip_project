@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  root "applications#home"
+  root "application#home"
 end
