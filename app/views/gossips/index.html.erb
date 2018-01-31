@@ -1,0 +1,7 @@
+<h1>Listes des Gossips</h1>
+<% @gossips.each do |gossip| %>
+  <p><%= "Auteur : " + gossip.anonymous_author.to_s  %>
+  <%= "Contenu : " + gossip.content.to_s  %>
+  <%= link_to "[Modifier]", edit_gossip_path(gossip) %>
+  </p>
+<% end %>
